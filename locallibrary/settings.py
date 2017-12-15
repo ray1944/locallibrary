@@ -79,10 +79,11 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         'NAME': 'mydatabase',
-        'USER': 'root',
-        'PASSWORD': '123456',
+        'USER': 'django',
+        'PASSWORD': 'django',
         'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'PORT': '3306',
+        'OPTIONS': {"init_command": "SET storage_engine=MyISAM"},
     }
 }
 
